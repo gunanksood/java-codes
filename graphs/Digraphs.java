@@ -1,10 +1,12 @@
 import java.util.*;
+
 public class Digraphs
 {
     private int V;
     private node[] adj;
     int[] marked;
     int[] marked1;
+    
     Digraphs(int v)
     {
         V = v;
@@ -35,7 +37,6 @@ public class Digraphs
         return V;
     }
 
-    
     void Addedge(int v, int w)
     {
         node new_node = new node(w);
