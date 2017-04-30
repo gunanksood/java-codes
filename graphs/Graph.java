@@ -3,6 +3,7 @@ public class Graph
 {
     private final int V;
     private LinkedList<Integer> adj[];
+    
     Graph(int V)
     {
         this.V = V;
@@ -12,15 +13,17 @@ public class Graph
             adj[i] = new LinkedList<Integer>();
         }
     }
-     public int V()
+    public int V()
     {
         return V;
     }
+    
     public void addEdge(int v, int w)
     {
         adj[v].add(w);
         adj[w].add(v);
     }
+    
     public Iterable<Integer> adj(int v)
     {
         return adj[v];
