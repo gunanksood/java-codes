@@ -24,7 +24,7 @@ public class DFS
 
     public boolean isConnected(int v)
     {
-        return marked[v];
+        return marked[v];                    // This shows that the component is connected or not.
     }
     
     public static void main(String[] args)
